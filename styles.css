@@ -1,0 +1,302 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+    color:#555;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+:focus {
+    outline: 0;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+     text-decoration:  none;
+}
+	
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    clear: both;
+    display: block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.page-wrap__inner {
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+/* header styles */
+
+header {
+	display: block;
+}
+
+.header-wrapper {
+    display: block;
+    position: relative;
+    max-width: 1440px;
+	width: 100%;
+    padding-left:7.5%;
+    padding-right:7.5%;
+    margin: 0 auto;
+}
+.header-wrapper .header__content {
+    display: block;
+    position: absolute;
+    top: 40px;
+	max-width: 1440px;
+    width: 100%;
+}
+.header__content {
+	margin-bottom: 30px;
+}
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* logo styles */
+.header__logo {
+    display: block;
+}
+.header.header__logo {
+    padding: 20px;
+}
+.header__logo img {
+	/* position: absolute; */
+	width: 123px;
+	height: 29px;
+	/* left: 7%; */
+	/* top: 16%; */
+}
+.header__nav-bar {
+    display: block;
+    padding-right: 6.61764705882%;
+    padding-left: 24.5098039216%;
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 16px 0;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+	gap: 36px;
+}
+.menu-li {
+	font-family: 'SVN-Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+}
+.header__right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	padding: 17px 0;
+	/* gap: 24px; */
+}
+
+.header__right .header__btn {
+	font-family: 'SVN-Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.header__right .header__btn .btn-signin {
+    padding: 8px 24px;
+    color: #2A84C6;
+    background: transparent;
+}
+
+.header__right .header__btn .btn-signup {
+	padding: 8px 24px;
+	gap: 10px;
+	background: linear-gradient(0deg, rgba(13, 50, 145, 0.2) 0%, rgba(16, 54, 151, 0) 100%), #1443BD;
+	border-radius: 4px;
+	letter-spacing: 0.0125em;
+	color: #FFFFFF;
+}
+ /* reasons styles*/
+div#reasons {
+	display: block;
+	position: relative;
+	top: 222px;
+	left:108px;
+}
+.reasons .reasons__content {
+	display:block;
+}
+.reasons__title h1{
+	font-family: 'SF Pro Display';
+	font-style: normal;	
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 72px;
+	letter-spacing: -0.005em;
+	width: 487px;
+	height: 144px;
+	color: #1443BD;
+	margin-bottom: 12px;
+}
+
+.reasons__content {
+	width: 492px;
+	height: 48px;
+	font-family: 'SVN-Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1443BD;
+	letter-spacing: 0.005em;
+	margin-bottom: 44px;
+}
+.reasons__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+	gap: 24px;
+}
+a.btn.trip {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+}
+a.btn.trip > span {
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.0125em;
+	color: #2A84C6;
+}
+a.btn.btn-primary.started {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 24px;
+	gap: 8px;
+	width: 181px;
+	height: 56px;
+	background: linear-gradient(0deg, rgba(13, 50, 145, 0.2) 0%, rgba(16, 54, 151, 0) 100%), #1443BD;
+	border-radius: 8px;
+}
+a.btn.btn-primary.started > span {
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.0015em;
+	color: #FFFFFF;
+
+}
+/* dialog styles */
+.dialog .dialog__chart {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 349px;
+	z-index: 0;
+}
+.dialog .dialog__pops {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 273px;
+	z-index: 1;
+}
+.reasons .pattern__background {
+	height: 528px;
+	background-image: url("../images/pattern.png");
+	/* background-size: cover; */
+	/* background-position: center center; */
+	/* background-repeat: no-repeat; */
+	position: relative;
+	margin-bottom: 90px;
+	/* z-index: -1; */
+	/* border-radius: 0px 0px 40px 40px; */
+  }
